@@ -45,6 +45,7 @@ public class MainActivity extends ActionBarActivity {
             String firstname = data.getStringExtra(Constants.FIRST_NAME);
             String lastname = data.getStringExtra(Constants.LAST_NAME);
 
+            // create object base on model, update value from input
             ContactModel contact = new ContactModel();
             contact.setFirstName(firstname);
             contact.setLastName(lastname);

@@ -8,9 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-/**
- * Created by Nikunj on 01-09-2015.
- */
+
 public class TableManipulationActivity extends Activity {
 
     EditText etFirstname;

@@ -1,8 +1,6 @@
 package com.example.theappguruz.sqlitedemoandroid;
 
-/**
- * Created by Nikunj on 03-09-2015.
- */
+
 public class Constants {
     public static final int ADD_RECORD = 0;
     public static final int UPDATE_RECORD = 1;
