@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Joe\.android\build-cache\7ebcef335c878a95f10d72eee233d65008fdb575\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="C:\Users\Joe\StudioProjects\Android---using-SQLite-Database---Sample--Code-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bec1c4ce6a25899850ced9067ef501823b338ad4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Joe\.android\build-cache\0407a4c5773f887e904b77306ee069e384bbefbf\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="C:\Users\Joe\StudioProjects\Android---using-SQLite-Database---Sample--Code-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_35267e96f008a96ecf7c7b9155510fdcc1ff500b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Joe\StudioProjects\Android---using-SQLite-Database---Sample--Code-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="87e636cbf93330b6383de62fb4f0b22ba4b77141">
+        <dex dex="C:\Users\Joe\StudioProjects\Android---using-SQLite-Database---Sample--Code-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a0b78bb43095c85eea176e1697e62a1088609c7c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Joe\StudioProjects\Android---using-SQLite-Database---Sample--Code-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Joe\StudioProjects\Android---using-SQLite-Database---Sample--Code-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_30cadf5b8baa7c4fcfb047a545221d8d5b2ab642\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Joe\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="C:\Users\Joe\StudioProjects\Android---using-SQLite-Database---Sample--Code-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.0.0_5277c09259af0a7f355dd7e51903aa27cbbedbb3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Joe\.android\build-cache\0407a4c5773f887e904b77306ee069e384bbefbf\output\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="C:\Users\Joe\StudioProjects\Android---using-SQLite-Database---Sample--Code-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_d80eeae32ea415d91b95994d863b2159d341491f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Joe\.android\build-cache\91270b65731c4d474dafb270f936f6ec58455488\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b017100da14f9c158c9f5f2f508333c224b24a7c">
+        <dex dex="C:\Users\Joe\StudioProjects\Android---using-SQLite-Database---Sample--Code-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8d08109e97cf167ab7f1727d83743fb38c124aea\classes.dex" />
+    </item>
+
+</items>
