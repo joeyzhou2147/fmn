@@ -6,4 +6,5 @@
     <string name="logodesc">Logo of App</string>
     <string name="login_complete">Success!</string>
     <string name="title_activity_splashpage">splashpage</string>
+    <string name="title_activity_home">Home Activity</string>
 </resources>
