@@ -505,6 +505,7 @@
 				95E37B2B1FB2882400AFF971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95E37B2C1FB2882400AFF971 /* Build configuration list for PBXNativeTarget "GAIProfileAndLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +514,7 @@
 				95E37B2E1FB2882400AFF971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95E37B2F1FB2882400AFF971 /* Build configuration list for PBXNativeTarget "GAIProfileAndLocationUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +523,7 @@
 				95E37B311FB2882400AFF971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
