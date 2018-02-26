@@ -1,0 +1,6 @@
+framework module Pods_GAILocationScreen {
+  umbrella header "Pods-GAILocationScreen-umbrella.h"
+
+  export *
+  module * { export * }
+}

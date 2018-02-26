@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22389EE2B8DE00AE871FC38CDA29F177 /* Pods-GAILocationScreenTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD6B58D8959974506554BF417294DC5 /* Pods-GAILocationScreenTests-dummy.m */; };
+		286487C427ACB9C1CA8199D85DE77B68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3D868906C030992FCCE0E7B00B4C8ED2 /* Pods-GAILocationScreenTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B97D36B9BA3945CF4C4444A9143153 /* Pods-GAILocationScreenTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B6CED8C6737D3789BA21CCCD11107AA /* Pods-GAILocationScreen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D80A63DC786B76813A48D0855A74D439 /* Pods-GAILocationScreen-dummy.m */; };
+		697CDB333F0BC20F0045C6D2C8F3A3D4 /* Pods-GAILocationScreen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64BD6D9083F1E8706766E046FE7687CE /* Pods-GAILocationScreen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		785B3C228C2DC758A7C0E12467F10E53 /* Pods-GAILocationScreenUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68C84053F38AAE18455AE3704D0F7CBF /* Pods-GAILocationScreenUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79A0CA4369764B6DABAC34426166CBB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9859F1BEB3FD6CD6B9C3C8D9F02DB7FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E4D8156C235C5E499553AB4874DDEB68 /* Pods-GAILocationScreenUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24231FBAAD4F69C86AA14F43BB69807C /* Pods-GAILocationScreenUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		0950F863CC2ECBD0B972BFBC70387CD4 /* Pods-GAILocationScreenTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GAILocationScreenTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		142D2C229065EEA5AB0C2B2978018CAF /* Pods-GAILocationScreenUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GAILocationScreenUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1C6200385182862E9168588E60B1CD37 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		1F4EDC14EDE636099A666D22836A3E8A /* Pods_GAILocationScreenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAILocationScreenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20A523502FC14ACCADF57AF980D6D40E /* Pods_GAILocationScreenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAILocationScreenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24231FBAAD4F69C86AA14F43BB69807C /* Pods-GAILocationScreenUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GAILocationScreenUITests-dummy.m"; sourceTree = "<group>"; };
+		2BD6B58D8959974506554BF417294DC5 /* Pods-GAILocationScreenTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GAILocationScreenTests-dummy.m"; sourceTree = "<group>"; };
+		3A03CD0E424A4CEAD392B64082434664 /* Pods-GAILocationScreenTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GAILocationScreenTests-frameworks.sh"; sourceTree = "<group>"; };
+		43B97D36B9BA3945CF4C4444A9143153 /* Pods-GAILocationScreenTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GAILocationScreenTests-umbrella.h"; sourceTree = "<group>"; };
+		510C3A39A3974DDCA9D45EA661E26C2E /* Pods-GAILocationScreenTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GAILocationScreenTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5195A38BF974F8ED3B46CDAAD644F947 /* Pods-GAILocationScreenUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GAILocationScreenUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A7BBA00F3AC4D0859D4C8E121AC47CF /* Pods-GAILocationScreenTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GAILocationScreenTests.modulemap"; sourceTree = "<group>"; };
+		60C32FFD2B73162ACF36570851D36B8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6134FFC1405940416E9A3FAB17216903 /* Pods-GAILocationScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GAILocationScreen.release.xcconfig"; sourceTree = "<group>"; };
+		64BD6D9083F1E8706766E046FE7687CE /* Pods-GAILocationScreen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GAILocationScreen-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68C84053F38AAE18455AE3704D0F7CBF /* Pods-GAILocationScreenUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GAILocationScreenUITests-umbrella.h"; sourceTree = "<group>"; };
+		70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		731C09062097DDAD14DE81BEA4A170CD /* Pods-GAILocationScreenUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GAILocationScreenUITests-frameworks.sh"; sourceTree = "<group>"; };
+		77A07B953E060DDD87DC213EF25626D6 /* Pods-GAILocationScreenUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GAILocationScreenUITests.modulemap"; sourceTree = "<group>"; };
+		796EB3986F183AB259159DBBE7056069 /* Pods-GAILocationScreen-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GAILocationScreen-acknowledgements.plist"; sourceTree = "<group>"; };
+		8569D6E105A317A89A6FD3F72508C0DF /* Pods-GAILocationScreenTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GAILocationScreenTests-resources.sh"; sourceTree = "<group>"; };
+		8D97ACD4FDC460D5A2F95DD3E98CF3D8 /* Pods-GAILocationScreen-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GAILocationScreen-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A4BA5CE1505EB8A7B85BA0FD8153A50 /* Pods-GAILocationScreenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GAILocationScreenTests.release.xcconfig"; sourceTree = "<group>"; };
+		A09D21E557421DF2E97A4512BB479CB3 /* Pods-GAILocationScreenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GAILocationScreenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A65ED65616C5861E2765BDC60AAAF910 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		B2075CC29644836265C4B9DA6477C5E2 /* Pods_GAILocationScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAILocationScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		B2EE048E260112FD4C5742D5A4ADECA1 /* Pods-GAILocationScreen-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GAILocationScreen-resources.sh"; sourceTree = "<group>"; };
+		B6F32A1C5CE103514ACA5F2DABE81A84 /* Pods-GAILocationScreenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GAILocationScreenUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB59CF688D2C88D8682E398FA9FE841F /* Pods-GAILocationScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GAILocationScreen.debug.xcconfig"; sourceTree = "<group>"; };
+		D0BBD42AC0452E849B352513A9DBA427 /* Pods-GAILocationScreenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GAILocationScreenUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D80A63DC786B76813A48D0855A74D439 /* Pods-GAILocationScreen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GAILocationScreen-dummy.m"; sourceTree = "<group>"; };
+		E2B6271406EF732720949A1EE17A9CF5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E775D4360F69CC054BC139607603AB3A /* Pods-GAILocationScreen-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GAILocationScreen-frameworks.sh"; sourceTree = "<group>"; };
+		EDB0579EC811FFC7BE6B78D2DB2D6404 /* Pods-GAILocationScreen.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GAILocationScreen.modulemap"; sourceTree = "<group>"; };
+		F5C3AAD3B3251C0BA3FFADBA6D930AD0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F790BF666B9A58BC03CAF766759C51DA /* Pods-GAILocationScreenUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GAILocationScreenUITests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13C9DD2EE4A59E4A17C8112B5B19CEA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9859F1BEB3FD6CD6B9C3C8D9F02DB7FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1722F867A1811F2F8E0905EBE8E614A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286487C427ACB9C1CA8199D85DE77B68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D65EAFF335916968F84A85C3299106 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A0CA4369764B6DABAC34426166CBB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				475420FA59EFC8377CF994A338979247 /* Frameworks */,
+				09DB508F39D8BE758EA4A7B9047268E9 /* Resources */,
+			);
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		09DB508F39D8BE758EA4A7B9047268E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A65ED65616C5861E2765BDC60AAAF910 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				B2F22323EA3B1ADB4F96376E3F709A68 /* Base */,
+				488E301C4ACDDA928635C4886F5F6158 /* Maps */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		343584E22C57489C672A8E6F731CB43A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C6200385182862E9168588E60B1CD37 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		385FA015FFB9210F372AB1078B856AAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */,
+				00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		475420FA59EFC8377CF994A338979247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		488E301C4ACDDA928635C4886F5F6158 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */,
+				343584E22C57489C672A8E6F731CB43A /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				385FA015FFB9210F372AB1078B856AAB /* Pods */,
+				A6F2B1B7F1BD6F569EB8519F5D858C71 /* Products */,
+				F72286ACE83A8821922997E6F06D4093 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F621B0F134C3D03595A1621CBCF0096 /* Pods-GAILocationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E2B6271406EF732720949A1EE17A9CF5 /* Info.plist */,
+				EDB0579EC811FFC7BE6B78D2DB2D6404 /* Pods-GAILocationScreen.modulemap */,
+				8D97ACD4FDC460D5A2F95DD3E98CF3D8 /* Pods-GAILocationScreen-acknowledgements.markdown */,
+				796EB3986F183AB259159DBBE7056069 /* Pods-GAILocationScreen-acknowledgements.plist */,
+				D80A63DC786B76813A48D0855A74D439 /* Pods-GAILocationScreen-dummy.m */,
+				E775D4360F69CC054BC139607603AB3A /* Pods-GAILocationScreen-frameworks.sh */,
+				B2EE048E260112FD4C5742D5A4ADECA1 /* Pods-GAILocationScreen-resources.sh */,
+				64BD6D9083F1E8706766E046FE7687CE /* Pods-GAILocationScreen-umbrella.h */,
+				BB59CF688D2C88D8682E398FA9FE841F /* Pods-GAILocationScreen.debug.xcconfig */,
+				6134FFC1405940416E9A3FAB17216903 /* Pods-GAILocationScreen.release.xcconfig */,
+			);
+			name = "Pods-GAILocationScreen";
+			path = "Target Support Files/Pods-GAILocationScreen";
+			sourceTree = "<group>";
+		};
+		82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */,
+				A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9134FC74E2DD8D1333250202EF0F2F0B /* Pods-GAILocationScreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5C3AAD3B3251C0BA3FFADBA6D930AD0 /* Info.plist */,
+				5A7BBA00F3AC4D0859D4C8E121AC47CF /* Pods-GAILocationScreenTests.modulemap */,
+				0950F863CC2ECBD0B972BFBC70387CD4 /* Pods-GAILocationScreenTests-acknowledgements.markdown */,
+				510C3A39A3974DDCA9D45EA661E26C2E /* Pods-GAILocationScreenTests-acknowledgements.plist */,
+				2BD6B58D8959974506554BF417294DC5 /* Pods-GAILocationScreenTests-dummy.m */,
+				3A03CD0E424A4CEAD392B64082434664 /* Pods-GAILocationScreenTests-frameworks.sh */,
+				8569D6E105A317A89A6FD3F72508C0DF /* Pods-GAILocationScreenTests-resources.sh */,
+				43B97D36B9BA3945CF4C4444A9143153 /* Pods-GAILocationScreenTests-umbrella.h */,
+				A09D21E557421DF2E97A4512BB479CB3 /* Pods-GAILocationScreenTests.debug.xcconfig */,
+				9A4BA5CE1505EB8A7B85BA0FD8153A50 /* Pods-GAILocationScreenTests.release.xcconfig */,
+			);
+			name = "Pods-GAILocationScreenTests";
+			path = "Target Support Files/Pods-GAILocationScreenTests";
+			sourceTree = "<group>";
+		};
+		A6F2B1B7F1BD6F569EB8519F5D858C71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2075CC29644836265C4B9DA6477C5E2 /* Pods_GAILocationScreen.framework */,
+				20A523502FC14ACCADF57AF980D6D40E /* Pods_GAILocationScreenTests.framework */,
+				1F4EDC14EDE636099A666D22836A3E8A /* Pods_GAILocationScreenUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2F22323EA3B1ADB4F96376E3F709A68 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E43C6DDBDDF5D448AE15A2919E65F600 /* Pods-GAILocationScreenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				60C32FFD2B73162ACF36570851D36B8A /* Info.plist */,
+				77A07B953E060DDD87DC213EF25626D6 /* Pods-GAILocationScreenUITests.modulemap */,
+				5195A38BF974F8ED3B46CDAAD644F947 /* Pods-GAILocationScreenUITests-acknowledgements.markdown */,
+				142D2C229065EEA5AB0C2B2978018CAF /* Pods-GAILocationScreenUITests-acknowledgements.plist */,
+				24231FBAAD4F69C86AA14F43BB69807C /* Pods-GAILocationScreenUITests-dummy.m */,
+				731C09062097DDAD14DE81BEA4A170CD /* Pods-GAILocationScreenUITests-frameworks.sh */,
+				F790BF666B9A58BC03CAF766759C51DA /* Pods-GAILocationScreenUITests-resources.sh */,
+				68C84053F38AAE18455AE3704D0F7CBF /* Pods-GAILocationScreenUITests-umbrella.h */,
+				D0BBD42AC0452E849B352513A9DBA427 /* Pods-GAILocationScreenUITests.debug.xcconfig */,
+				B6F32A1C5CE103514ACA5F2DABE81A84 /* Pods-GAILocationScreenUITests.release.xcconfig */,
+			);
+			name = "Pods-GAILocationScreenUITests";
+			path = "Target Support Files/Pods-GAILocationScreenUITests";
+			sourceTree = "<group>";
+		};
+		F72286ACE83A8821922997E6F06D4093 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F621B0F134C3D03595A1621CBCF0096 /* Pods-GAILocationScreen */,
+				9134FC74E2DD8D1333250202EF0F2F0B /* Pods-GAILocationScreenTests */,
+				E43C6DDBDDF5D448AE15A2919E65F600 /* Pods-GAILocationScreenUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06A39597B05911977EB5B229E4876656 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697CDB333F0BC20F0045C6D2C8F3A3D4 /* Pods-GAILocationScreen-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31009E73F0577DF47A10584D3569307C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785B3C228C2DC758A7C0E12467F10E53 /* Pods-GAILocationScreenUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48502FFD39F17DE2DC305EF74D97C1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D868906C030992FCCE0E7B00B4C8ED2 /* Pods-GAILocationScreenTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		44B7B6DD840C2BCC430D0A77C06DD2B0 /* Pods-GAILocationScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29BB1C1F22BFDE106611ECB60D7D20F3 /* Build configuration list for PBXNativeTarget "Pods-GAILocationScreen" */;
+			buildPhases = (
+				78C18C7437D1FCD5E9AF0D6FFB4A69D1 /* Sources */,
+				13C9DD2EE4A59E4A17C8112B5B19CEA7 /* Frameworks */,
+				06A39597B05911977EB5B229E4876656 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GAILocationScreen";
+			productName = "Pods-GAILocationScreen";
+			productReference = B2075CC29644836265C4B9DA6477C5E2 /* Pods_GAILocationScreen.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC4DB231996C87B85A775C0F2B561329 /* Pods-GAILocationScreenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 695F58EEF0C70478DC66A8A8EE4F19E5 /* Build configuration list for PBXNativeTarget "Pods-GAILocationScreenUITests" */;
+			buildPhases = (
+				3C547D645CCBC20C5C9E0976511E5F4D /* Sources */,
+				1722F867A1811F2F8E0905EBE8E614A4 /* Frameworks */,
+				31009E73F0577DF47A10584D3569307C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GAILocationScreenUITests";
+			productName = "Pods-GAILocationScreenUITests";
+			productReference = 1F4EDC14EDE636099A666D22836A3E8A /* Pods_GAILocationScreenUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD78B5F65E277465BD33800C30F74F04 /* Pods-GAILocationScreenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A03D68DD1C6B9E479A3ACFC8E1EAF25 /* Build configuration list for PBXNativeTarget "Pods-GAILocationScreenTests" */;
+			buildPhases = (
+				F955E78108D783F0CE322E7B165AE199 /* Sources */,
+				B8D65EAFF335916968F84A85C3299106 /* Frameworks */,
+				E48502FFD39F17DE2DC305EF74D97C1C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GAILocationScreenTests";
+			productName = "Pods-GAILocationScreenTests";
+			productReference = 20A523502FC14ACCADF57AF980D6D40E /* Pods_GAILocationScreenTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					44B7B6DD840C2BCC430D0A77C06DD2B0 = {
+						DevelopmentTeam = 9QEB2SSTBC;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A6F2B1B7F1BD6F569EB8519F5D858C71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44B7B6DD840C2BCC430D0A77C06DD2B0 /* Pods-GAILocationScreen */,
+				FD78B5F65E277465BD33800C30F74F04 /* Pods-GAILocationScreenTests */,
+				DC4DB231996C87B85A775C0F2B561329 /* Pods-GAILocationScreenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C547D645CCBC20C5C9E0976511E5F4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D8156C235C5E499553AB4874DDEB68 /* Pods-GAILocationScreenUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C18C7437D1FCD5E9AF0D6FFB4A69D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B6CED8C6737D3789BA21CCCD11107AA /* Pods-GAILocationScreen-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F955E78108D783F0CE322E7B165AE199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22389EE2B8DE00AE871FC38CDA29F177 /* Pods-GAILocationScreenTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		11B2FE015D7314F6DE9AC7002D6238F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1A05C39CD6E766C9ECB7F1C6BBA28DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A4BA5CE1505EB8A7B85BA0FD8153A50 /* Pods-GAILocationScreenTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GAILocationScreenTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GAILocationScreenTests/Pods-GAILocationScreenTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GAILocationScreenTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2CB4C0BBF0B7B0407016CE898EB774FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		69AA50341C720DA54A3081A1EE94C50E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0BBD42AC0452E849B352513A9DBA427 /* Pods-GAILocationScreenUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GAILocationScreenUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GAILocationScreenUITests/Pods-GAILocationScreenUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GAILocationScreenUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C89C9F50B1D3F536CC8380A0D9EC331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6F32A1C5CE103514ACA5F2DABE81A84 /* Pods-GAILocationScreenUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GAILocationScreenUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GAILocationScreenUITests/Pods-GAILocationScreenUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GAILocationScreenUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B8795D6957011BE0DE74740B224720A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6134FFC1405940416E9A3FAB17216903 /* Pods-GAILocationScreen.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9QEB2SSTBC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GAILocationScreen/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GAILocationScreen/Pods-GAILocationScreen.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GAILocationScreen;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3BE61812D025CBC995944087818521A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB59CF688D2C88D8682E398FA9FE841F /* Pods-GAILocationScreen.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9QEB2SSTBC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GAILocationScreen/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GAILocationScreen/Pods-GAILocationScreen.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GAILocationScreen;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE6FDBE75233F2E46DC2887A3BD87BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A09D21E557421DF2E97A4512BB479CB3 /* Pods-GAILocationScreenTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GAILocationScreenTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GAILocationScreenTests/Pods-GAILocationScreenTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GAILocationScreenTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29BB1C1F22BFDE106611ECB60D7D20F3 /* Build configuration list for PBXNativeTarget "Pods-GAILocationScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3BE61812D025CBC995944087818521A /* Debug */,
+				B8795D6957011BE0DE74740B224720A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B2FE015D7314F6DE9AC7002D6238F9 /* Debug */,
+				2CB4C0BBF0B7B0407016CE898EB774FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		695F58EEF0C70478DC66A8A8EE4F19E5 /* Build configuration list for PBXNativeTarget "Pods-GAILocationScreenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69AA50341C720DA54A3081A1EE94C50E /* Debug */,
+				6C89C9F50B1D3F536CC8380A0D9EC331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A03D68DD1C6B9E479A3ACFC8E1EAF25 /* Build configuration list for PBXNativeTarget "Pods-GAILocationScreenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6FDBE75233F2E46DC2887A3BD87BCF /* Debug */,
+				1A05C39CD6E766C9ECB7F1C6BBA28DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

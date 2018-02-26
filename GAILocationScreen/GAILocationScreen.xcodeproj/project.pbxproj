@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F55ABCC84CEA7470241C977 /* Pods_GAILocationScreenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB2B06B31F9E88C2CE23CD0 /* Pods_GAILocationScreenUITests.framework */; };
+		3CE8BCC1DEBFC00473B0F723 /* Pods_GAILocationScreenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1729D3E920222AF8942449 /* Pods_GAILocationScreenTests.framework */; };
+		9597C5FD1FC61BC800869397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597C5FC1FC61BC800869397 /* AppDelegate.swift */; };
+		9597C5FF1FC61BC800869397 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597C5FE1FC61BC800869397 /* ViewController.swift */; };
+		9597C6021FC61BC800869397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9597C6001FC61BC800869397 /* Main.storyboard */; };
+		9597C6041FC61BC800869397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9597C6031FC61BC800869397 /* Assets.xcassets */; };
+		9597C6071FC61BC800869397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9597C6051FC61BC800869397 /* LaunchScreen.storyboard */; };
+		9597C6121FC61BC900869397 /* GAILocationScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597C6111FC61BC900869397 /* GAILocationScreenTests.swift */; };
+		9597C61D1FC61BC900869397 /* GAILocationScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597C61C1FC61BC900869397 /* GAILocationScreenUITests.swift */; };
+		9597C62B1FC67B6800869397 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597C62A1FC67B6800869397 /* MapController.swift */; };
+		CC7DBF312478466D4DFE93CD /* Pods_GAILocationScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0584401EE89B1834E4D137 /* Pods_GAILocationScreen.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9597C60E1FC61BC900869397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9597C5F11FC61BC800869397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9597C5F81FC61BC800869397;
+			remoteInfo = GAILocationScreen;
+		};
+		9597C6191FC61BC900869397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9597C5F11FC61BC800869397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9597C5F81FC61BC800869397;
+			remoteInfo = GAILocationScreen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		138188C7452F0CE6193A8535 /* Pods-GAILocationScreenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAILocationScreenUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GAILocationScreenUITests/Pods-GAILocationScreenUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5103F792130B6F0985677F8F /* Pods-GAILocationScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAILocationScreen.release.xcconfig"; path = "Pods/Target Support Files/Pods-GAILocationScreen/Pods-GAILocationScreen.release.xcconfig"; sourceTree = "<group>"; };
+		6188AAE7E41A4DEF341479C4 /* Pods-GAILocationScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAILocationScreen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GAILocationScreen/Pods-GAILocationScreen.debug.xcconfig"; sourceTree = "<group>"; };
+		6876A6873D2DE2B9650AC660 /* Pods-GAILocationScreenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAILocationScreenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GAILocationScreenTests/Pods-GAILocationScreenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B93B07F4406162D984E05A2 /* Pods-GAILocationScreenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAILocationScreenUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GAILocationScreenUITests/Pods-GAILocationScreenUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A0584401EE89B1834E4D137 /* Pods_GAILocationScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAILocationScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9597C5F91FC61BC800869397 /* GAILocationScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAILocationScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9597C5FC1FC61BC800869397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9597C5FE1FC61BC800869397 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9597C6011FC61BC800869397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9597C6031FC61BC800869397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9597C6061FC61BC800869397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9597C6081FC61BC800869397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9597C60D1FC61BC900869397 /* GAILocationScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAILocationScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9597C6111FC61BC900869397 /* GAILocationScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAILocationScreenTests.swift; sourceTree = "<group>"; };
+		9597C6131FC61BC900869397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9597C6181FC61BC900869397 /* GAILocationScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAILocationScreenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9597C61C1FC61BC900869397 /* GAILocationScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAILocationScreenUITests.swift; sourceTree = "<group>"; };
+		9597C61E1FC61BC900869397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9597C62A1FC67B6800869397 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		CE9566778519D3306AEF82EB /* Pods-GAILocationScreenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAILocationScreenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GAILocationScreenTests/Pods-GAILocationScreenTests.release.xcconfig"; sourceTree = "<group>"; };
+		FDB2B06B31F9E88C2CE23CD0 /* Pods_GAILocationScreenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAILocationScreenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE1729D3E920222AF8942449 /* Pods_GAILocationScreenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAILocationScreenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9597C5F61FC61BC800869397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7DBF312478466D4DFE93CD /* Pods_GAILocationScreen.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9597C60A1FC61BC900869397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE8BCC1DEBFC00473B0F723 /* Pods_GAILocationScreenTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9597C6151FC61BC900869397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F55ABCC84CEA7470241C977 /* Pods_GAILocationScreenUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		066864F339B1DA01A3778FA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6188AAE7E41A4DEF341479C4 /* Pods-GAILocationScreen.debug.xcconfig */,
+				5103F792130B6F0985677F8F /* Pods-GAILocationScreen.release.xcconfig */,
+				6876A6873D2DE2B9650AC660 /* Pods-GAILocationScreenTests.debug.xcconfig */,
+				CE9566778519D3306AEF82EB /* Pods-GAILocationScreenTests.release.xcconfig */,
+				138188C7452F0CE6193A8535 /* Pods-GAILocationScreenUITests.debug.xcconfig */,
+				6B93B07F4406162D984E05A2 /* Pods-GAILocationScreenUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A1370884D02FBE77B68E8B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A0584401EE89B1834E4D137 /* Pods_GAILocationScreen.framework */,
+				FE1729D3E920222AF8942449 /* Pods_GAILocationScreenTests.framework */,
+				FDB2B06B31F9E88C2CE23CD0 /* Pods_GAILocationScreenUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9597C5F01FC61BC800869397 = {
+			isa = PBXGroup;
+			children = (
+				9597C5FB1FC61BC800869397 /* GAILocationScreen */,
+				9597C6101FC61BC900869397 /* GAILocationScreenTests */,
+				9597C61B1FC61BC900869397 /* GAILocationScreenUITests */,
+				9597C5FA1FC61BC800869397 /* Products */,
+				066864F339B1DA01A3778FA0 /* Pods */,
+				5A1370884D02FBE77B68E8B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9597C5FA1FC61BC800869397 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9597C5F91FC61BC800869397 /* GAILocationScreen.app */,
+				9597C60D1FC61BC900869397 /* GAILocationScreenTests.xctest */,
+				9597C6181FC61BC900869397 /* GAILocationScreenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9597C5FB1FC61BC800869397 /* GAILocationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9597C5FC1FC61BC800869397 /* AppDelegate.swift */,
+				9597C5FE1FC61BC800869397 /* ViewController.swift */,
+				9597C6001FC61BC800869397 /* Main.storyboard */,
+				9597C6031FC61BC800869397 /* Assets.xcassets */,
+				9597C6051FC61BC800869397 /* LaunchScreen.storyboard */,
+				9597C6081FC61BC800869397 /* Info.plist */,
+				9597C62A1FC67B6800869397 /* MapController.swift */,
+			);
+			path = GAILocationScreen;
+			sourceTree = "<group>";
+		};
+		9597C6101FC61BC900869397 /* GAILocationScreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				9597C6111FC61BC900869397 /* GAILocationScreenTests.swift */,
+				9597C6131FC61BC900869397 /* Info.plist */,
+			);
+			path = GAILocationScreenTests;
+			sourceTree = "<group>";
+		};
+		9597C61B1FC61BC900869397 /* GAILocationScreenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9597C61C1FC61BC900869397 /* GAILocationScreenUITests.swift */,
+				9597C61E1FC61BC900869397 /* Info.plist */,
+			);
+			path = GAILocationScreenUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9597C5F81FC61BC800869397 /* GAILocationScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9597C6211FC61BC900869397 /* Build configuration list for PBXNativeTarget "GAILocationScreen" */;
+			buildPhases = (
+				20ADCDE805271B54B44FC345 /* [CP] Check Pods Manifest.lock */,
+				9597C5F51FC61BC800869397 /* Sources */,
+				9597C5F61FC61BC800869397 /* Frameworks */,
+				9597C5F71FC61BC800869397 /* Resources */,
+				912FD21F24330A3108A79D35 /* [CP] Embed Pods Frameworks */,
+				6B133110B6CBEE85A2976ED8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GAILocationScreen;
+			productName = GAILocationScreen;
+			productReference = 9597C5F91FC61BC800869397 /* GAILocationScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9597C60C1FC61BC900869397 /* GAILocationScreenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9597C6241FC61BC900869397 /* Build configuration list for PBXNativeTarget "GAILocationScreenTests" */;
+			buildPhases = (
+				88C31ACE76B61DD3BB6CDD60 /* [CP] Check Pods Manifest.lock */,
+				9597C6091FC61BC900869397 /* Sources */,
+				9597C60A1FC61BC900869397 /* Frameworks */,
+				9597C60B1FC61BC900869397 /* Resources */,
+				45ED431353CB7AFD716A53C0 /* [CP] Embed Pods Frameworks */,
+				DCF6E5BA167BAED29A4E3E19 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9597C60F1FC61BC900869397 /* PBXTargetDependency */,
+			);
+			name = GAILocationScreenTests;
+			productName = GAILocationScreenTests;
+			productReference = 9597C60D1FC61BC900869397 /* GAILocationScreenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9597C6171FC61BC900869397 /* GAILocationScreenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9597C6271FC61BC900869397 /* Build configuration list for PBXNativeTarget "GAILocationScreenUITests" */;
+			buildPhases = (
+				70B5D9E3019382FF6079AA1B /* [CP] Check Pods Manifest.lock */,
+				9597C6141FC61BC900869397 /* Sources */,
+				9597C6151FC61BC900869397 /* Frameworks */,
+				9597C6161FC61BC900869397 /* Resources */,
+				57A6C9D31C644F14A942D8CB /* [CP] Embed Pods Frameworks */,
+				1B16FA26983EFDCA6B787E70 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9597C61A1FC61BC900869397 /* PBXTargetDependency */,
+			);
+			name = GAILocationScreenUITests;
+			productName = GAILocationScreenUITests;
+			productReference = 9597C6181FC61BC900869397 /* GAILocationScreenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9597C5F11FC61BC800869397 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Dennis Henneman";
+				TargetAttributes = {
+					9597C5F81FC61BC800869397 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					9597C60C1FC61BC900869397 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9597C5F81FC61BC800869397;
+					};
+					9597C6171FC61BC900869397 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9597C5F81FC61BC800869397;
+					};
+				};
+			};
+			buildConfigurationList = 9597C5F41FC61BC800869397 /* Build configuration list for PBXProject "GAILocationScreen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9597C5F01FC61BC800869397;
+			productRefGroup = 9597C5FA1FC61BC800869397 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9597C5F81FC61BC800869397 /* GAILocationScreen */,
+				9597C60C1FC61BC900869397 /* GAILocationScreenTests */,
+				9597C6171FC61BC900869397 /* GAILocationScreenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9597C5F71FC61BC800869397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9597C6071FC61BC800869397 /* LaunchScreen.storyboard in Resources */,
+				9597C6041FC61BC800869397 /* Assets.xcassets in Resources */,
+				9597C6021FC61BC800869397 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9597C60B1FC61BC900869397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9597C6161FC61BC900869397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B16FA26983EFDCA6B787E70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GAILocationScreenUITests/Pods-GAILocationScreenUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20ADCDE805271B54B44FC345 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GAILocationScreen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45ED431353CB7AFD716A53C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GAILocationScreenTests/Pods-GAILocationScreenTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57A6C9D31C644F14A942D8CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GAILocationScreenUITests/Pods-GAILocationScreenUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B133110B6CBEE85A2976ED8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GAILocationScreen/Pods-GAILocationScreen-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GAILocationScreen/Pods-GAILocationScreen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70B5D9E3019382FF6079AA1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GAILocationScreenUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88C31ACE76B61DD3BB6CDD60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GAILocationScreenTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		912FD21F24330A3108A79D35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GAILocationScreen/Pods-GAILocationScreen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF6E5BA167BAED29A4E3E19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GAILocationScreenTests/Pods-GAILocationScreenTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9597C5F51FC61BC800869397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9597C5FF1FC61BC800869397 /* ViewController.swift in Sources */,
+				9597C62B1FC67B6800869397 /* MapController.swift in Sources */,
+				9597C5FD1FC61BC800869397 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9597C6091FC61BC900869397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9597C6121FC61BC900869397 /* GAILocationScreenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9597C6141FC61BC900869397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9597C61D1FC61BC900869397 /* GAILocationScreenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9597C60F1FC61BC900869397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9597C5F81FC61BC800869397 /* GAILocationScreen */;
+			targetProxy = 9597C60E1FC61BC900869397 /* PBXContainerItemProxy */;
+		};
+		9597C61A1FC61BC900869397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9597C5F81FC61BC800869397 /* GAILocationScreen */;
+			targetProxy = 9597C6191FC61BC900869397 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9597C6001FC61BC800869397 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9597C6011FC61BC800869397 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9597C6051FC61BC800869397 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9597C6061FC61BC800869397 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9597C61F1FC61BC900869397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9597C6201FC61BC900869397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9597C6221FC61BC900869397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6188AAE7E41A4DEF341479C4 /* Pods-GAILocationScreen.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GAILocationScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dennis.GAILocationScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9597C6231FC61BC900869397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5103F792130B6F0985677F8F /* Pods-GAILocationScreen.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GAILocationScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dennis.GAILocationScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		9597C6251FC61BC900869397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6876A6873D2DE2B9650AC660 /* Pods-GAILocationScreenTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GAILocationScreenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dennis.GAILocationScreenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAILocationScreen.app/GAILocationScreen";
+			};
+			name = Debug;
+		};
+		9597C6261FC61BC900869397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9566778519D3306AEF82EB /* Pods-GAILocationScreenTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GAILocationScreenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dennis.GAILocationScreenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAILocationScreen.app/GAILocationScreen";
+			};
+			name = Release;
+		};
+		9597C6281FC61BC900869397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138188C7452F0CE6193A8535 /* Pods-GAILocationScreenUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GAILocationScreenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dennis.GAILocationScreenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = GAILocationScreen;
+			};
+			name = Debug;
+		};
+		9597C6291FC61BC900869397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B93B07F4406162D984E05A2 /* Pods-GAILocationScreenUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GAILocationScreenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dennis.GAILocationScreenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = GAILocationScreen;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9597C5F41FC61BC800869397 /* Build configuration list for PBXProject "GAILocationScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9597C61F1FC61BC900869397 /* Debug */,
+				9597C6201FC61BC900869397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9597C6211FC61BC900869397 /* Build configuration list for PBXNativeTarget "GAILocationScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9597C6221FC61BC900869397 /* Debug */,
+				9597C6231FC61BC900869397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9597C6241FC61BC900869397 /* Build configuration list for PBXNativeTarget "GAILocationScreenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9597C6251FC61BC900869397 /* Debug */,
+				9597C6261FC61BC900869397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9597C6271FC61BC900869397 /* Build configuration list for PBXNativeTarget "GAILocationScreenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9597C6281FC61BC900869397 /* Debug */,
+				9597C6291FC61BC900869397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9597C5F11FC61BC800869397 /* Project object */;
+}
