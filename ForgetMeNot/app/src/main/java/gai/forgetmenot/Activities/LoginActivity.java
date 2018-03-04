@@ -1,4 +1,4 @@
-package gai.forgetmenot;
+package gai.forgetmenot.Activities;
 
 
 import android.content.Intent;
@@ -7,10 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.jadedh.myprofile.MyProfile;
+import gai.forgetmenot.Activities.HomeActivity;
+import gai.forgetmenot.R;
+
 
 public class LoginActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +19,13 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void signinbutton (View v)
+    public void signin (View v)
     {
         Button button = (Button) v;
-        Intent intent = new Intent(this, MyProfile.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         v.findViewById(R.id.signin);
         startActivity(intent);
     }
+
+
 }
