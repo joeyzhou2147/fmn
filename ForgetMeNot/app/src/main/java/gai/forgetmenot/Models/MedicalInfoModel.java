@@ -28,36 +28,36 @@ public class MedicalInfoModel {
         return address;
     }
 
-    public String getMedical_id(){return medical_id; }
-    public String getUser_id() { return user_id; }
-    public String getDoctor_name() { return doctor_name; }
-    public String getDoctor_address_street() {return doctor_address_street;}
-    public int getStreet_apt_num() {return street_apt_num;}
-    public String getDoctor_address_city() {return doctor_address_city;}
-    public String getDoctor_state() {return doctor_state;}
-    public int getDoctor_zip() {return doctor_zip;}
-    public int getDoctor_phonenumber() {return doctor_phonenumber;}
+    public String getMedicalId(){return medical_id; }
+    public String getUserId() { return user_id; }
+    public String getDoctorName() { return doctor_name; }
+    public String getDoctorStreet() {return doctor_address_street;}
+    public int getStreetAptNum() {return street_apt_num;}
+    public String getDoctorAddressCity() {return doctor_address_city;}
+    public String getDoctorState() {return doctor_state;}
+    public int getDoctorZip() {return doctor_zip;}
+    public int getDoctorPhone() {return doctor_phonenumber;}
 
 
     public void setMedicalID(String id) {
         medical_id=id;
     }
-    public void setDoctor_address_zip(int id) {
+    public void setDoctorZip(int id) {
         doctor_zip =id;
     }
-    public void setDoctor_phone_number(int phone) {
+    public void setDoctorPhone(int phone) {
         doctor_phonenumber= phone;
     }
     public void setDoctorAptNum(int aptNum) {
         this.street_apt_num = aptNum;
     }
-    public void setDoctor_name(String name) {
+    public void setDoctorName(String name) {
         doctor_name = name;
     }
-    public void setDoctor_address_street(String street) {
+    public void setDoctorStreet(String street) {
         doctor_address_street = street;
     }
-    public void setDoctor_address_city(String city) {
+    public void setDoctorCity(String city) {
         doctor_address_city = city;
     }
 

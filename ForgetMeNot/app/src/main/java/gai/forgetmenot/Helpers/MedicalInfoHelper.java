@@ -1,5 +1,6 @@
 package gai.forgetmenot.Helpers;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -53,6 +54,24 @@ public class MedicalInfoHelper extends SQLiteOpenHelper {
                 cursor.getInt(7),cursor.getInt(8));
     }
 
+    public void addMedicalRecord(MedicalInfoModel medicalModel) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_MEDICAL_ID,medicalModel.getMedicalId());
+        values.put(COLUMN_USER_ID,medicalModel.getUserId());
+        values.put(COLUMN_DOC_NAME,medicalModel.getDoctorName());
+        values.put(COLUMN_DOC_STREETNAME,medicalModel.getDoctorStreet());
+        values.put(COLUMN_DOC_STREET_APT_NUM,medicalModel.getStreetAptNum());
+        values.put(COLUMN_DOC_ADDRESS_CITY, medicalModel.getDoctorAddressCity());
+        values.put(COLUMN_DOC_ADDRESS_STATE, medicalModel.getDoctorState());
+        values.put(COLUMN_DOC_STREET_ZIP,medicalModel.getDoctorZip());
+        values.put(COLUMN_DOC_PHONE_NUMBER,medicalModel.getDoctorPhone());
+
+        db.insert(TABLE_NAME,null,values);
+        db.close();
+    }
+
     public MedicalInfoModel getRecord(String userID) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_NAME,null,COLUMN_USER_ID+"=?",new String[] {userID},null,null,null
@@ -93,23 +112,8 @@ public class MedicalInfoHelper extends SQLiteOpenHelper {
 
     public void deleteRecord(MedicalInfoModel medicalInfoModel) {
         database = this.getReadableDatabase();
-        database.delete(TABLE_NAME, COLUMN_USER_ID + " = ?", new String[]{medicalInfoModel.getUser_id() });
+        database.delete(TABLE_NAME, COLUMN_USER_ID + " = ?", new String[]{medicalInfoModel.getUserId() });
         database.close();
-    }
-
-    public ArrayList<String> getAllTableName() {
-        database = this.getReadableDatabase();
-        ArrayList<String> allTableNames=new ArrayList<String>();
-        Cursor cursor=database.rawQuery("SELECT name FROM sqlite_master WHERE type='table'",null);
-        if(cursor.getCount()>0) {
-            for(int i=0;i<cursor.getCount();i++) {
-                cursor.moveToNext();
-                allTableNames.add(cursor.getString(cursor.getColumnIndex("name")));
-            }
-        }
-        cursor.close();
-        database.close();
-        return allTableNames;
     }
 
 }
