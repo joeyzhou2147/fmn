@@ -6,7 +6,7 @@ package gai.forgetmenot.Models;
 
 public class Prescription {
 
-    String prescription_id,medical_id,prescription_consistency,prescription_amount,prescription_sideefects, prescription_when;
+    private String prescription_id,medical_id,prescription_consistency,prescription_amount,prescription_sideefects, prescription_when;
 
 
     public Prescription(String prescription_id, String medical_id,String prescription_when,String prescription_consistency,String prescription_amount,String prescription_sideefects) {
