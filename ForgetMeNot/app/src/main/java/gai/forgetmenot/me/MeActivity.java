@@ -1,10 +1,9 @@
-package com.example.jadedh.myprofile;
+package gai.forgetmenot.me;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import android.graphics.BitmapFactory;
@@ -12,15 +11,13 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import android.database.Cursor;
 import android.net.Uri;
-import android.os.Bundle;
 import android.provider.MediaStore;
 
+import gai.forgetmenot.R;
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
-
-public class MyProfile extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.jadedh.myprofile.MESSAGE";
+public class MeActivity extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "gai.forgetmenot.me.MESSAGE";
     public static final int PICK_IMAGE = 1;
     private static int RESULT_LOAD_IMG = 1;
     String imgDecodableString;
@@ -28,45 +25,27 @@ public class MyProfile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_profile);
+        setContentView(R.layout.me_main);
 
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
         String message = intent.getStringExtra(DisplayMessageActivity.EXTRA_MESSAGE);
-        String education = intent.getStringExtra("education");
-        String bloodgroup = intent.getStringExtra("bloodgroup");
-        String work = intent.getStringExtra("work");
-        String mobile = intent.getStringExtra("mobile");
-        String gender = intent.getStringExtra("gender");
-        String marriage = intent.getStringExtra("marriage");
+        String name = intent.getStringExtra("name");
         String dob = intent.getStringExtra("dob");
-        String email = intent.getStringExtra("email");
+        String home = intent.getStringExtra("home");
 
         // Capture the layout's TextView and set the string as its text
-        TextView textView = findViewById(R.id.name);
-        TextView tv_education = findViewById(R.id.education);
-        TextView tv_bloodGroup = findViewById(R.id.blood_group);
-        TextView tv_work = findViewById(R.id.occupation);
-        TextView tv_mobile = findViewById(R.id.mobileNumber);
-        TextView tv_gender = findViewById(R.id.gender);
-        TextView tv_marriage = findViewById(R.id.marriage);
+        TextView tv_name = findViewById(R.id.name);
         TextView tv_dob = findViewById(R.id.dob);
-        TextView tv_email = findViewById(R.id.email);
+        TextView tv_home = findViewById(R.id.home);
 
-        textView.setText(message);
-        tv_education.setText(education);
-        tv_bloodGroup.setText(bloodgroup);
-        tv_work.setText(work);
-        tv_mobile.setText(mobile);
-        tv_gender.setText(gender);
-        tv_marriage.setText(marriage);
+        tv_name.setText(message);
         tv_dob.setText(dob);
-        tv_email.setText(email);
-
+        tv_home.setText(home);
     }
 
     public void EditPage(View view) {
-        Intent intent = new Intent(MyProfile.this, DisplayMessageActivity.class);
+        Intent intent = new Intent(MeActivity.this, DisplayMessageActivity.class);
         startActivity(intent);
     }
 

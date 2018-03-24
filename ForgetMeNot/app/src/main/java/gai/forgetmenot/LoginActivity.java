@@ -21,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     public void signinbutton (View v)
     {
         Button button = (Button) v;
-        Intent intent = new Intent(this, MyProfile.class);
+        Intent intent = new Intent(this, MainActivity.class);
         v.findViewById(R.id.signin);
         startActivity(intent);
     }

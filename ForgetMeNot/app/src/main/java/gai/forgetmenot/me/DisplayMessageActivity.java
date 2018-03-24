@@ -1,4 +1,5 @@
-package com.example.jadedh.myprofile;
+package gai.forgetmenot.me;
+
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,10 +11,14 @@ import android.database.Cursor;
 //import android.support.v7.app.ActionBarActivity;
 import android.widget.Button;
 import android.widget.Toast;
+import android.widget.Toast;
+
+import gai.forgetmenot.R;
 
 public class DisplayMessageActivity extends AppCompatActivity {
     DatabaseHelper myDb;
-    EditText editName, editEducation, editBloodgroup, editTextId;
+    EditText editName, editDob, editHome;
+    String userId;
     Button btnAddData;
     Button btnviewAll;
     Button btnDelete;
@@ -25,11 +30,9 @@ public class DisplayMessageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_message);
         myDb = new DatabaseHelper(this);
-
         editName = (EditText) findViewById(R.id.editText_name);
-        editEducation = (EditText) findViewById(R.id.editText_education);
-        editBloodgroup = (EditText) findViewById(R.id.editText_bloodgroup);
-        editTextId = (EditText) findViewById(R.id.editText_id);
+        editDob = (EditText) findViewById(R.id.editText_dob);
+        editHome = (EditText) findViewById(R.id.editText_home);
         btnAddData = (Button) findViewById(R.id.button_add);
         btnviewAll = (Button) findViewById(R.id.button_viewAll);
         btnviewUpdate = (Button) findViewById(R.id.button_update);
@@ -37,13 +40,13 @@ public class DisplayMessageActivity extends AppCompatActivity {
         AddData();
         viewAll();
         UpdateData();
-        DeleteData();
+        //DeleteData();
 
         //super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_display_message);
     }
 
-    public void DeleteData() {
+    /*public void DeleteData() {
         btnDelete.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -56,16 +59,15 @@ public class DisplayMessageActivity extends AppCompatActivity {
                     }
                 }
         );
-    }
+    }*/
 
     public void UpdateData() {
         btnviewUpdate.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean isUpdate = myDb.updateData(editTextId.getText().toString(),
-                                editName.getText().toString(),
-                                editEducation.getText().toString(), editBloodgroup.getText().toString());
+                        boolean isUpdate = myDb.updateData(userId, editName.getText().toString(),
+                                editDob.getText().toString(),editHome.getText().toString());
                         if (isUpdate == true)
                             Toast.makeText(DisplayMessageActivity.this, "Data Update", Toast.LENGTH_LONG).show();
                         else
@@ -80,9 +82,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean isInserted = myDb.insertData(editName.getText().toString(),
-                                editEducation.getText().toString(),
-                                editBloodgroup.getText().toString());
+                        boolean isInserted = myDb.insertData(userId, editName.getText().toString(),
+                                editDob.getText().toString(),editHome.getText().toString());
                         if (isInserted == true)
                             Toast.makeText(DisplayMessageActivity.this, "Data Inserted", Toast.LENGTH_LONG).show();
                         else
@@ -108,8 +109,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
                         while (res.moveToNext()) {
                             buffer.append("Id :" + res.getString(0) + "\n");
                             buffer.append("Name :" + res.getString(1) + "\n");
-                            buffer.append("Education :" + res.getString(2) + "\n");
-                            buffer.append("Blood group :" + res.getString(3) + "\n\n");
+                            buffer.append("Date of Birth :" + res.getString(2) + "\n");
+                            buffer.append("Home Address :" + res.getString(3) + "\n\n");
                         }
 
                         // Show all data
@@ -151,7 +152,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
     }*/
 
 
-    public static final String EXTRA_MESSAGE = "com.example.jadedh.myprofile.MESSAGE";
+    public static final String EXTRA_MESSAGE = "gai.forgetmenot.me.MeActivity.MESSAGE";
 
     /*@Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -163,37 +164,20 @@ public class DisplayMessageActivity extends AppCompatActivity {
      * Called when the user taps the Send button
      */
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, MyProfile.class);
+        Intent intent = new Intent(this, gai.forgetmenot.me.MeActivity.class);
 
-        EditText editText = (EditText) findViewById(R.id.editText_name);
-        EditText et_education = (EditText) findViewById(R.id.editText_education);
-        EditText et_blood_group = (EditText) findViewById(R.id.editText_bloodgroup);
-        EditText et_work = (EditText) findViewById(R.id.editText_mobile);
-        EditText et_mobile = (EditText) findViewById(R.id.editText_mobile);
-        EditText et_gender = (EditText) findViewById(R.id.editText_gender);
-        EditText et_marriage = (EditText) findViewById(R.id.editText_marriage);
-        EditText et_dob = (EditText) findViewById(R.id.editText_dob);
-        EditText et_email = (EditText) findViewById(R.id.editText_email);
+        EditText et_name = (EditText) findViewById(R.id.editText_name);
+        EditText et_dob = (EditText) findViewById(R.id.editText_education);
+        EditText et_home = (EditText) findViewById(R.id.editText_bloodgroup);
 
-        String message = editText.getText().toString();
-        String str_education = et_education.getText().toString();
-        String str_blood_group = et_blood_group.getText().toString();
-        String str_work = et_work.getText().toString();
-        String str_mobile = et_mobile.getText().toString();
-        String str_gender = et_gender.getText().toString();
-        String str_marriage = et_marriage.getText().toString();
-        String str_dob = et_dob.getText().toString();
-        String str_email = et_email.getText().toString();
+        String name = et_name.getText().toString();
+        String dob = et_dob.getText().toString();
+        String home = et_home.getText().toString();
 
-        intent.putExtra(EXTRA_MESSAGE, message);
-        intent.putExtra("surname", str_education);
-        intent.putExtra("bloodgroup", str_blood_group);
-        intent.putExtra("work", str_work);
-        intent.putExtra("mobile", str_mobile);
-        intent.putExtra("gender", str_gender);
-        intent.putExtra("marriage", str_marriage);
-        intent.putExtra("dob", str_dob);
-        intent.putExtra("email", str_email);
+        intent.putExtra(EXTRA_MESSAGE, name);
+        intent.putExtra("dob", dob);
+        intent.putExtra("home", home);
+
         startActivity(intent);
     }
 }

@@ -89,7 +89,7 @@
             android:id="@+id/constraintLayout">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textView_education"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -99,10 +99,10 @@
                 android:layout_marginLeft="25dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintTop_toBottomOf="@+id/textView_bloodgroup" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textView_work"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -112,34 +112,34 @@
                 android:layout_marginLeft="8dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                app:layout_constraintTop_toBottomOf="@+id/textView_education" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/textView_dob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:clickable="true"
                 android:text="DOB: "
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView_marriage"
                 android:layout_marginLeft="8dp"
                 app:layout_constraintLeft_toLeftOf="parent" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/textView_marriage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:clickable="true"
                 android:text="Marriage:"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView_gender"
                 android:layout_marginLeft="8dp"
                 app:layout_constraintLeft_toLeftOf="parent" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/textView_gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
@@ -153,7 +153,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/textView_bloodgroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -172,7 +172,7 @@
                 android:layout_margin="5dp"
                 android:clickable="true"
                 android:text="O+"
-                app:layout_constraintLeft_toRightOf="@+id/textView10"
+                app:layout_constraintLeft_toRightOf="@+id/textView_bloodgroup"
                 android:layout_marginLeft="8dp"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="8dp" />
@@ -187,7 +187,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
                 app:layout_constraintTop_toBottomOf="@+id/marriage"
-                app:layout_constraintLeft_toRightOf="@+id/textView16" />
+                app:layout_constraintLeft_toRightOf="@+id/textView_dob" />
 
             <TextView
                 android:id="@+id/marriage"
@@ -197,7 +197,7 @@
                 android:layout_marginTop="5dp"
                 android:clickable="true"
                 android:text="Married"
-                app:layout_constraintLeft_toRightOf="@+id/textView15"
+                app:layout_constraintLeft_toRightOf="@+id/textView_marriage"
                 app:layout_constraintTop_toBottomOf="@+id/gender" />
 
             <TextView
@@ -206,7 +206,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:text="Male"
-                app:layout_constraintLeft_toRightOf="@+id/textView11"
+                app:layout_constraintLeft_toRightOf="@+id/textView_gender"
                 android:layout_margin="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="8dp"
@@ -221,8 +221,8 @@
                 android:layout_marginTop="8dp"
                 android:clickable="true"
                 android:text="Business"
-                app:layout_constraintLeft_toRightOf="@+id/textView7"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                app:layout_constraintLeft_toRightOf="@+id/textView_work"
+                app:layout_constraintTop_toBottomOf="@+id/textView_education" />
 
             <TextView
                 android:id="@+id/mobileNumber"
@@ -240,11 +240,10 @@
                 android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:clickable="true"
                 android:text="marothiatechs@gmail.com"
                 app:layout_constraintLeft_toRightOf="@+id/textView27"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="0dp"
                 app:layout_constraintTop_toBottomOf="@+id/dob" />
 
             <TextView
@@ -255,7 +254,7 @@
                 android:text="Email: "
                 android:textStyle="bold"
                 android:layout_marginTop="5dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView_dob"
                 android:layout_marginLeft="8dp"
                 app:layout_constraintLeft_toLeftOf="parent" />
 
@@ -269,7 +268,7 @@
                 android:layout_margin="5dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView_work"
                 app:layout_constraintLeft_toLeftOf="parent" />
 
             <TextView
@@ -280,8 +279,8 @@
                 android:clickable="true"
                 android:text="B.Tech"
                 android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView10"
-                app:layout_constraintLeft_toRightOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView_bloodgroup"
+                app:layout_constraintLeft_toRightOf="@+id/textView_education"
                 android:layout_marginLeft="8dp" />
 
         </android.support.constraint.ConstraintLayout>

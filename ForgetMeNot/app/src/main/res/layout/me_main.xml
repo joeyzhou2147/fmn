@@ -1,51 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
+    <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/backButton"
+        android:layout_below="@+id/profileImage"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="155dp"
+        android:layout_marginTop="27dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name" />
 
-    <EditText
+    <TextView
         android:id="@+id/dob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/name"
         android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:ems="10"
-        android:inputType="phone"
-        android:text="Phone Number" />
+        android:inputType="date"
+        android:text="Date of Birth" />
 
-    <EditText
-        android:id="@+id/dob"
+    <TextView
+        android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/dob"
         android:layout_below="@+id/dob"
         android:layout_marginTop="13dp"
-        android:ems="10"
-        android:inputType="date"
-        android:text="Date of Birth" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/dob"
-        android:layout_below="@+id/dob"
-        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:inputType="textPostalAddress"
-        android:text="Postal Address" />
+        android:text="Home Address" />
 
     <Button
         android:id="@+id/backButton"
@@ -56,4 +48,21 @@
         android:layout_marginStart="22dp"
         android:layout_marginTop="16dp"
         android:text="Back" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/man" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profileImage"
+        android:layout_toEndOf="@+id/name"
+        android:text="Update" />
 </RelativeLayout>
