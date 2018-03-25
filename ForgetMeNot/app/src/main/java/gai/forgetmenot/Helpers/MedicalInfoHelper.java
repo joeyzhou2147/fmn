@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 
@@ -13,9 +14,9 @@ import gai.forgetmenot.Models.MedicalInfoModel;
 public class MedicalInfoHelper extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
-    public static final String DATABASE_NAME = "ForgetMeNot.db";
+    public static final String DATABASE_NAME = "Forget.db";
 
-    public static final String TABLE_NAME = "[medical]";
+    public static final String TABLE_NAME = "medical";
     public static final String COLUMN_MEDICAL_ID = "medical_id";
     public static final String COLUMN_USER_ID = "user_id";
     public static final String COLUMN_DOC_NAME = "doc_name";
@@ -28,8 +29,8 @@ public class MedicalInfoHelper extends SQLiteOpenHelper {
 
     public static final String createTable = "create table " + TABLE_NAME + " ( "
             + COLUMN_MEDICAL_ID + " VARCHAR, " + COLUMN_USER_ID + " VARCHAR, "+COLUMN_DOC_NAME+ " VARCHAR," +COLUMN_DOC_STREETNAME
-            +" VARCHAR, "+COLUMN_DOC_STREET_APT_NUM+" INTEGER, "+COLUMN_DOC_ADDRESS_CITY+" VARCHAR," +COLUMN_DOC_ADDRESS_STATE+"VARCHAR,"
-            +COLUMN_DOC_STREET_ZIP+"INTEGER, "+COLUMN_DOC_PHONE_NUMBER +"INTEGER);";
+            +" VARCHAR, "+COLUMN_DOC_STREET_APT_NUM+" INTEGER, "+COLUMN_DOC_ADDRESS_CITY+" VARCHAR," +COLUMN_DOC_ADDRESS_STATE+" VARCHAR,"
+            +COLUMN_DOC_STREET_ZIP+" INTEGER, "+COLUMN_DOC_PHONE_NUMBER +" INTEGER);";
 
     private SQLiteDatabase database;
 
@@ -40,6 +41,19 @@ public class MedicalInfoHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(createTable);
+
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_MEDICAL_ID,"324324");
+        values.put(COLUMN_USER_ID,"RogueOne");
+        values.put(COLUMN_DOC_NAME,"Donald Trump");
+        values.put(COLUMN_DOC_STREETNAME,"140 Bay State Road");
+        values.put(COLUMN_DOC_STREET_APT_NUM,343434);
+        values.put(COLUMN_DOC_ADDRESS_CITY, "Boston");
+        values.put(COLUMN_DOC_ADDRESS_STATE, "Massachussetts");
+        values.put(COLUMN_DOC_STREET_ZIP,64113);
+        values.put(COLUMN_DOC_PHONE_NUMBER,435345);
+
+        db.insert(TABLE_NAME,null,values);
     }
 
     @Override
@@ -69,24 +83,24 @@ public class MedicalInfoHelper extends SQLiteOpenHelper {
         values.put(COLUMN_DOC_PHONE_NUMBER,medicalModel.getDoctorPhone());
 
         db.insert(TABLE_NAME,null,values);
-        db.close();
     }
 
     public MedicalInfoModel getRecord(String userID) {
         SQLiteDatabase db = this.getReadableDatabase();
+        Log.d("USER ID:",userID);
         Cursor cursor = db.query(TABLE_NAME,null,COLUMN_USER_ID+"=?",new String[] {userID},null,null,null
         );
 
         if (cursor==null) {
             return null;
         }
-
+        cursor.moveToFirst();
         return createMedicalObject(cursor);
     }
 
-    public ArrayList<MedicalInfoModel> getAllRecords() {
+    public ArrayList<MedicalInfoModel> getAllRecords(String userId) {
         database = this.getReadableDatabase();
-        Cursor cursor = database.query(TABLE_NAME, null, null, null, null, null, null);
+        Cursor cursor = database.query(TABLE_NAME, null, COLUMN_USER_ID + " = ?", new String[] {userId}, null, null, null);
 
         ArrayList<MedicalInfoModel> medicalRecords = new ArrayList<>();
         MedicalInfoModel medicalInfoModel;

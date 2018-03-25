@@ -22,9 +22,24 @@
         <activity android:name=".Activities.LoginActivity"></activity>
 
 
-        <activity
+        <!--<activity
             android:name=".Activities.HomeActivity"
             android:label="Home"
+            android:theme="@style/AppTheme"></activity>-->
+
+        <activity
+            android:name="gai.forgetmenot.Activities.MedicalActivity"
+            android:label="Medical"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="gai.forgetmenot.Activities.DoctorActivity"
+            android:label="Doctor"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="gai.forgetmenot.Activities.PrescriptionActivity"
+            android:label="Prescription"
             android:theme="@style/AppTheme"></activity>
     </application>
 
