@@ -1,4 +1,4 @@
-package gai.forgetmenot.me;
+package gai.forgetmenot.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +15,6 @@ import android.provider.MediaStore;
 
 import gai.forgetmenot.R;
 
-
 public class MeActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "gai.forgetmenot.me.MESSAGE";
     public static final int PICK_IMAGE = 1;
@@ -29,7 +28,7 @@ public class MeActivity extends AppCompatActivity {
 
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
-        String message = intent.getStringExtra(DisplayMessageActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(MeUpdate.EXTRA_MESSAGE);
         String name = intent.getStringExtra("name");
         String dob = intent.getStringExtra("dob");
         String home = intent.getStringExtra("home");
@@ -45,7 +44,7 @@ public class MeActivity extends AppCompatActivity {
     }
 
     public void EditPage(View view) {
-        Intent intent = new Intent(MeActivity.this, DisplayMessageActivity.class);
+        Intent intent = new Intent(MeActivity.this, MeUpdate.class);
         startActivity(intent);
     }
 
@@ -73,7 +72,7 @@ public class MeActivity extends AppCompatActivity {
                 int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
                 imgDecodableString = cursor.getString(columnIndex);
                 cursor.close();
-                ImageView imgView = (ImageView) findViewById(R.id.imgView);
+                ImageView imgView = (ImageView) findViewById(R.id.profileImage);
                 // Set the Image in ImageView after decoding the String
                 imgView.setImageBitmap(BitmapFactory.decodeFile(imgDecodableString));
             } else {

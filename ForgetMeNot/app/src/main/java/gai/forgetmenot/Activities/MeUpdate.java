@@ -1,4 +1,4 @@
-package gai.forgetmenot.me;
+package gai.forgetmenot.Activities;
 
 
 import android.content.Intent;
@@ -11,12 +11,11 @@ import android.database.Cursor;
 //import android.support.v7.app.ActionBarActivity;
 import android.widget.Button;
 import android.widget.Toast;
-import android.widget.Toast;
 
 import gai.forgetmenot.R;
 
-public class DisplayMessageActivity extends AppCompatActivity {
-    DatabaseHelper myDb;
+public class MeUpdate extends AppCompatActivity {
+    MeHelper myDb;
     EditText editName, editDob, editHome;
     String userId;
     Button btnAddData;
@@ -28,8 +27,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_message);
-        myDb = new DatabaseHelper(this);
+        setContentView(R.layout.me_display_message);
+        myDb = new MeHelper(this);
         editName = (EditText) findViewById(R.id.editText_name);
         editDob = (EditText) findViewById(R.id.editText_dob);
         editHome = (EditText) findViewById(R.id.editText_home);
@@ -53,9 +52,9 @@ public class DisplayMessageActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         Integer deletedRows = myDb.deleteData(editTextId.getText().toString());
                         if (deletedRows > 0)
-                            Toast.makeText(DisplayMessageActivity.this, "Data Deleted", Toast.LENGTH_LONG).show();
+                            Toast.makeText(MeUpdate.this, "Data Deleted", Toast.LENGTH_LONG).show();
                         else
-                            Toast.makeText(DisplayMessageActivity.this, "Data not Deleted", Toast.LENGTH_LONG).show();
+                            Toast.makeText(MeUpdate.this, "Data not Deleted", Toast.LENGTH_LONG).show();
                     }
                 }
         );
@@ -69,9 +68,9 @@ public class DisplayMessageActivity extends AppCompatActivity {
                         boolean isUpdate = myDb.updateData(userId, editName.getText().toString(),
                                 editDob.getText().toString(),editHome.getText().toString());
                         if (isUpdate == true)
-                            Toast.makeText(DisplayMessageActivity.this, "Data Update", Toast.LENGTH_LONG).show();
+                            Toast.makeText(MeUpdate.this, "Data Update", Toast.LENGTH_LONG).show();
                         else
-                            Toast.makeText(DisplayMessageActivity.this, "Data not Updated", Toast.LENGTH_LONG).show();
+                            Toast.makeText(MeUpdate.this, "Data not Updated", Toast.LENGTH_LONG).show();
                     }
                 }
         );
@@ -85,9 +84,9 @@ public class DisplayMessageActivity extends AppCompatActivity {
                         boolean isInserted = myDb.insertData(userId, editName.getText().toString(),
                                 editDob.getText().toString(),editHome.getText().toString());
                         if (isInserted == true)
-                            Toast.makeText(DisplayMessageActivity.this, "Data Inserted", Toast.LENGTH_LONG).show();
+                            Toast.makeText(MeUpdate.this, "Data Inserted", Toast.LENGTH_LONG).show();
                         else
-                            Toast.makeText(DisplayMessageActivity.this, "Data not Inserted", Toast.LENGTH_LONG).show();
+                            Toast.makeText(MeUpdate.this, "Data not Inserted", Toast.LENGTH_LONG).show();
                     }
                 }
         );
@@ -152,7 +151,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
     }*/
 
 
-    public static final String EXTRA_MESSAGE = "gai.forgetmenot.me.MeActivity.MESSAGE";
+    public static final String EXTRA_MESSAGE = "gai.forgetmenot.Activities.MeActivity.MESSAGE";
 
     /*@Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -164,11 +163,11 @@ public class DisplayMessageActivity extends AppCompatActivity {
      * Called when the user taps the Send button
      */
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, gai.forgetmenot.me.MeActivity.class);
+        Intent intent = new Intent(this, MeActivity.class);
 
         EditText et_name = (EditText) findViewById(R.id.editText_name);
-        EditText et_dob = (EditText) findViewById(R.id.editText_education);
-        EditText et_home = (EditText) findViewById(R.id.editText_bloodgroup);
+        EditText et_dob = (EditText) findViewById(R.id.editText_dob);
+        EditText et_home = (EditText) findViewById(R.id.editText_home);
 
         String name = et_name.getText().toString();
         String dob = et_dob.getText().toString();

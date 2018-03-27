@@ -1,4 +1,4 @@
-package gai.forgetmenot.me;
+package gai.forgetmenot.Activities;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+public class MeHelper extends SQLiteOpenHelper {
     // Initializing database variables
     private static final String DATABASE_NAME = "Me.db";
     private static final String TABLE_NAME = "me_table";
@@ -16,7 +16,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String HOME = "HOME";
 
     // Create a database object
-    DatabaseHelper(Context context) {
+    MeHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
 

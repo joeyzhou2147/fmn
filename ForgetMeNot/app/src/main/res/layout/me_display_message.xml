@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jadedh.myprofile.DisplayMessageActivity">
+    tools:context="gai.forgetmenot.Activities.MeUpdate">
 
     <EditText
         android:id="@+id/editText_name"
@@ -64,7 +64,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop="2dp"
         tools:layout_editor_absoluteY="0dp" />
 
     <Button
@@ -72,16 +71,13 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Add Data"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_update" />
-
+        app:layout_constraintRight_toRightOf="parent"/>
     <Button
         android:id="@+id/button_viewAll"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="View Data"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_add" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
         android:id="@+id/profileImage"
@@ -102,9 +98,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Delete"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_viewAll" />
-
+        app:layout_constraintRight_toRightOf="parent"/>
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"

@@ -26,11 +26,8 @@ public class LoginActivity extends AppCompatActivity {
     {
         Log.d("DEBUG 1", "FIRST SIGN IN");
         Button button = (Button) v;
-<<<<<<< HEAD:ForgetMeNot/app/src/main/java/gai/forgetmenot/LoginActivity.java
-        Intent intent = new Intent(this, MainActivity.class);
-=======
-        Intent intent123 = new Intent(this, MedicalActivity.class);
->>>>>>> 3882bb087cd8be2b514c998620dd7604c95d2c2d:ForgetMeNot/app/src/main/java/gai/forgetmenot/Activities/LoginActivity.java
+        Intent intent = new Intent(this, gai.forgetmenot.Activities.MainActivity.class);
+        Intent intent123 = new Intent(this, gai.forgetmenot.Activities.MedicalActivity.class);
         v.findViewById(R.id.signin);
         Log.d("DEBUG 2", "Entering Medical acitivty");
 
