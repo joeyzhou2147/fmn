@@ -1,4 +1,4 @@
-package gai.forgetmenot.Activities;
+package gai.forgetmenot.Helpers;
 
 
 import android.content.Intent;
@@ -12,6 +12,7 @@ import android.database.Cursor;
 import android.widget.Button;
 import android.widget.Toast;
 
+import gai.forgetmenot.Activities.MeActivity;
 import gai.forgetmenot.R;
 
 public class MeUpdate extends AppCompatActivity {

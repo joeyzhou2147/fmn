@@ -13,6 +13,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.provider.MediaStore;
 
+import gai.forgetmenot.Helpers.MeUpdate;
 import gai.forgetmenot.R;
 
 public class MeActivity extends AppCompatActivity {

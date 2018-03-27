@@ -1,4 +1,4 @@
-package gai.forgetmenot.Activities;
+package gai.forgetmenot.Helpers;
 
 import android.content.ContentValues;
 import android.content.Context;
