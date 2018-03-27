@@ -41,19 +41,6 @@ public class MedicalInfoHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(createTable);
-
-        ContentValues values = new ContentValues();
-        values.put(COLUMN_MEDICAL_ID,"324324");
-        values.put(COLUMN_USER_ID,"RogueOne");
-        values.put(COLUMN_DOC_NAME,"Donald Trump");
-        values.put(COLUMN_DOC_STREETNAME,"140 Bay State Road");
-        values.put(COLUMN_DOC_STREET_APT_NUM,343434);
-        values.put(COLUMN_DOC_ADDRESS_CITY, "Boston");
-        values.put(COLUMN_DOC_ADDRESS_STATE, "Massachussetts");
-        values.put(COLUMN_DOC_STREET_ZIP,64113);
-        values.put(COLUMN_DOC_PHONE_NUMBER,435345);
-
-        db.insert(TABLE_NAME,null,values);
     }
 
     @Override
@@ -85,6 +72,22 @@ public class MedicalInfoHelper extends SQLiteOpenHelper {
         db.insert(TABLE_NAME,null,values);
     }
 
+    public void updateMedicalRecord(MedicalInfoModel medicalModel) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_MEDICAL_ID,medicalModel.getMedicalId());
+        values.put(COLUMN_USER_ID,medicalModel.getUserId());
+        values.put(COLUMN_DOC_NAME,medicalModel.getDoctorName());
+        values.put(COLUMN_DOC_STREETNAME,medicalModel.getDoctorStreet());
+        values.put(COLUMN_DOC_STREET_APT_NUM,medicalModel.getStreetAptNum());
+        values.put(COLUMN_DOC_ADDRESS_CITY, medicalModel.getDoctorAddressCity());
+        values.put(COLUMN_DOC_ADDRESS_STATE, medicalModel.getDoctorState());
+        values.put(COLUMN_DOC_STREET_ZIP,medicalModel.getDoctorZip());
+        values.put(COLUMN_DOC_PHONE_NUMBER,medicalModel.getDoctorPhone());
+
+        db.update(TABLE_NAME, values, COLUMN_USER_ID+"=",new String[] {medicalModel.getUserId()});
+    }
     public MedicalInfoModel getRecord(String userID) {
         SQLiteDatabase db = this.getReadableDatabase();
         Log.d("USER ID:",userID);
@@ -129,5 +132,4 @@ public class MedicalInfoHelper extends SQLiteOpenHelper {
         database.delete(TABLE_NAME, COLUMN_USER_ID + " = ?", new String[]{medicalInfoModel.getUserId() });
         database.close();
     }
-
 }

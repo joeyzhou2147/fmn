@@ -1,6 +1,8 @@
 package gai.forgetmenot.Activities;
 
+import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import gai.forgetmenot.Helpers.MedicalInfoHelper;
 import gai.forgetmenot.Models.MedicalInfoModel;
 import gai.forgetmenot.R;
 
@@ -23,7 +27,8 @@ public class DoctorActivity extends AppCompatActivity {
     EditText name,address, phone;
     Button submit;
     private MedicalInfoModel model;
-
+    private MedicalInfoHelper sqdb;
+    private String medicalID;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +37,10 @@ public class DoctorActivity extends AppCompatActivity {
         address = findViewById(R.id.DoctorAddress);
         phone = findViewById(R.id.DoctorPhoneNumber);
 
-        model = getIntent().getParcelableExtra("MedicalModel");
+        sqdb = new MedicalInfoHelper(this);
+        medicalID = getIntent().getExtras().getString("MedicalID");
+
+        model = sqdb.getRecord(medicalID);
 
         name.setText(model.getDoctorName());
         address.setText(model.getDoctorAddress());
@@ -49,7 +57,10 @@ public class DoctorActivity extends AppCompatActivity {
                             + " \n" + "Phone" + phone.getText().toString() + " \n", Toast.LENGTH_SHORT).show();
                     model.setDoctorName(name.getText().toString());
                     model.setDoctorPhone(Integer.parseInt(phone.getText().toString()));
-
+                    name.setText(model.getDoctorName());
+                    address.setText(model.getDoctorAddress());
+                    phone.setText(String.valueOf(model.getDoctorPhone()));
+                    sqdb.updateMedicalRecord(model);
                 }
             }
         });
@@ -57,6 +68,8 @@ public class DoctorActivity extends AppCompatActivity {
 
 
     }
+
+
 
 
 
