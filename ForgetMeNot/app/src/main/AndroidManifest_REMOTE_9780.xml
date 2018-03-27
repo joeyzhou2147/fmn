@@ -19,12 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
-
-
-=======
         <activity android:name=".Activities.LoginActivity"></activity>
 
 
@@ -47,7 +41,6 @@
             android:name="gai.forgetmenot.Activities.PrescriptionActivity"
             android:label="Prescription"
             android:theme="@style/AppTheme"></activity>
->>>>>>> 3882bb087cd8be2b514c998620dd7604c95d2c2d
     </application>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 </manifest>

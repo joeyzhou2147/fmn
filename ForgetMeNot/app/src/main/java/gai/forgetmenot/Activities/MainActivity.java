@@ -1,4 +1,4 @@
-package gai.forgetmenot;
+package gai.forgetmenot.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.jadedh.myprofile.MyProfile;
+
+import gai.forgetmenot.R;
 
 public class MainActivity extends AppCompatActivity {
 
