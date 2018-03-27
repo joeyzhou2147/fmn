@@ -26,7 +26,8 @@ public class LoginActivity extends AppCompatActivity {
     {
         Log.d("DEBUG 1", "FIRST SIGN IN");
         Button button = (Button) v;
-        Intent intent123 = new Intent(this, MedicalActivity.class);
+        Intent intent = new Intent(this, gai.forgetmenot.Activities.MainActivity.class);
+        Intent intent123 = new Intent(this, gai.forgetmenot.Activities.MedicalActivity.class);
         v.findViewById(R.id.signin);
         Log.d("DEBUG 2", "Entering Medical acitivty");
 
