@@ -62,13 +62,4 @@ public class MedicalActivity extends AppCompatActivity implements View.OnClickLi
         }
 
     }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if(requestCode == 1 && resultCode == Activity.RESULT_OK){
-            model = (MedicalInfoModel) data.getParcelableExtra("MedicalModel");
-            sqdb.updateMedicalRecord(model);
-        }
-    }
 }

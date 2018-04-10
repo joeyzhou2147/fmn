@@ -86,7 +86,7 @@ public class MedicalInfoHelper extends SQLiteOpenHelper {
         values.put(COLUMN_DOC_STREET_ZIP,medicalModel.getDoctorZip());
         values.put(COLUMN_DOC_PHONE_NUMBER,medicalModel.getDoctorPhone());
 
-        db.update(TABLE_NAME, values, COLUMN_USER_ID+"=",new String[] {medicalModel.getUserId()});
+        db.update(TABLE_NAME, values, COLUMN_USER_ID+"=?",new String[] {medicalModel.getUserId()});
     }
     public MedicalInfoModel getRecord(String userID) {
         SQLiteDatabase db = this.getReadableDatabase();
