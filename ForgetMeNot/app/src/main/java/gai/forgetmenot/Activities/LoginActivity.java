@@ -1,5 +1,8 @@
 package gai.forgetmenot.Activities;
 
+import android.util.Log;
+
+
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -21,10 +24,17 @@ public class LoginActivity extends AppCompatActivity {
 
     public void signin (View v)
     {
+        Log.d("DEBUG 1", "FIRST SIGN IN");
         Button button = (Button) v;
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, gai.forgetmenot.Activities.MainActivity.class);
+        Intent intent123 = new Intent(this, gai.forgetmenot.Activities.MedicalActivity.class);
         v.findViewById(R.id.signin);
-        startActivity(intent);
+        Log.d("DEBUG 2", "Entering Medical acitivty");
+
+
+        startActivity(intent123);
+        Log.d("DEBUG 4", "After Start acitivty");
+
     }
 
 

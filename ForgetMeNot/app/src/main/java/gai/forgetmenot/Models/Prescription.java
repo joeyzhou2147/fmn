@@ -44,8 +44,13 @@ public class Prescription {
         return prescription_sideefects;
     }
 
-
     public String getPrescriptionWhen() {
         return prescription_when;
+    }
+
+    public String toString() {
+        String toString = "•" +prescription_when+ "\n\n•" + prescription_consistency +
+                "•\n\n"+ prescription_amount;
+        return toString;
     }
 }

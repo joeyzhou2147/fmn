@@ -16,9 +16,9 @@ import gai.forgetmenot.Models.MedicalInfoModel;
 public class PrescriptionHelper extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
-    public static final String DATABASE_NAME = "ForgetMeNot.db";
+    public static final String DATABASE_NAME = "Forget.db";
 
-    public static final String TABLE_NAME = "Prescription";
+    public static final String TABLE_NAME = "prescription";
     public static final String COLUMN_PRESCRIPTION_ID= "prescription_id";
     public static final String COLUMN_MEDICAL_ID = "medical_id";
     public static final String COLUMN_PRESCRIPTION_WHEN = "prescription_when";
@@ -28,8 +28,8 @@ public class PrescriptionHelper extends SQLiteOpenHelper {
 
 
     public static final String createTable = "create table " + TABLE_NAME + " ( "
-            + COLUMN_PRESCRIPTION_ID + " VARCHAR, " + COLUMN_MEDICAL_ID+ " VARCHAR, "+COLUMN_PRESCRIPTION_WHEN+ " VARCHAR(MAX),"
-            + COLUMN_PRESCRIPTION_CONSISTENCY+" VARCHAR(MAX), "+COLUMN_PRESCRIPTION_AMOUNT+" VARCHAR(MAX), "+COLUMN_PRESCRIPTION_SIDEEFFECTS+" VARCHAR(MAX);";
+            + COLUMN_PRESCRIPTION_ID + " VARCHAR, " + COLUMN_MEDICAL_ID+ " VARCHAR, "+COLUMN_PRESCRIPTION_WHEN+ " VARCHAR, "
+            + COLUMN_PRESCRIPTION_CONSISTENCY+" VARCHAR, "+COLUMN_PRESCRIPTION_AMOUNT+" VARCHAR, "+COLUMN_PRESCRIPTION_SIDEEFFECTS+" VARCHAR);";
 
     public PrescriptionHelper(Context context) {
         super(context,DATABASE_NAME,null,DATABASE_VERSION);
@@ -51,7 +51,6 @@ public class PrescriptionHelper extends SQLiteOpenHelper {
 
     public void addPrescription(Prescription prescription) {
         SQLiteDatabase db =  this.getWritableDatabase();
-
         ContentValues values = new ContentValues();
         values.put(COLUMN_PRESCRIPTION_ID,prescription.getPrescriptionID());
         values.put(COLUMN_MEDICAL_ID,prescription.getMedicalID());
@@ -60,7 +59,6 @@ public class PrescriptionHelper extends SQLiteOpenHelper {
         values.put(COLUMN_PRESCRIPTION_AMOUNT,prescription.getPrescriptionAmount());
         values.put(COLUMN_PRESCRIPTION_SIDEEFFECTS,prescription.getPrescriptionSideEffects());
         db.insert(TABLE_NAME,null,values);
-        db.close();
     }
 
     public Prescription getPrescription(String prescriptionID) {
@@ -75,9 +73,9 @@ public class PrescriptionHelper extends SQLiteOpenHelper {
         return createPrescription(cursor);
     }
 
-    public ArrayList<Prescription> getAllRecords() {
+    public ArrayList<Prescription> getAllRecords(String medicalID) {
         SQLiteDatabase db= this.getReadableDatabase();
-        Cursor cursor = db.query(TABLE_NAME, null, null, null, null, null, null);
+        Cursor cursor = db.query(TABLE_NAME, null, COLUMN_MEDICAL_ID+"=?",new String[] {medicalID}, null, null, null);
 
         ArrayList<Prescription> prescriptions= new ArrayList<>();
         Prescription prescription;
