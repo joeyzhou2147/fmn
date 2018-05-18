@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,25 +37,11 @@ public class PrescriptionActivity extends AppCompatActivity {
 
         intializeTestValues();
         ArrayList<Prescription> prescriptions = sqdb.getAllRecords("ANewHope");
+        RecyclerView recyclerView = findViewById(R.id.prescriptionlist);
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, prescriptions);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        // total number of textviews to add
-        final int N = prescriptions.size();
-        final TextView[] myTextViews = new TextView[N]; // create an empty array;
-        ConstraintLayout constraintLayout = (ConstraintLayout) findViewById(R.id.ConstraintLayout);
-
-        for (int i = 0; i < N; i++) {
-            // create a new textview
-            final TextView rowTextView = new TextView(this);
-
-            // set some properties of rowTextView or something
-            rowTextView.setText(prescriptions.get(i).toString());
-
-            //add the textview to the linearlayout
-            constraintLayout.addView(rowTextView);
-
-            // save a reference to the textview for later
-            myTextViews[i] = rowTextView;
-        }
     }
 
     private void intializeTestValues() {
