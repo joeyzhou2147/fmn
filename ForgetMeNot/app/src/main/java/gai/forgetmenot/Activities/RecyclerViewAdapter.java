@@ -37,6 +37,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(PrescriptionViewHolder holder, int position) {
+        holder.prescription_name.setText("Prescription " +(position+1));
         holder.prescription_amount.setText(prescriptions.get(position).getPrescriptionAmount());
         holder.prescription_frequency.setText(prescriptions.get(position).getPrescriptionConsistency());
         holder.prescription_when.setText(prescriptions.get(position).getPrescriptionWhen());
@@ -51,8 +52,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         TextView prescription_when;
         TextView prescription_frequency;
         TextView prescription_amount;
+        TextView prescription_name;
         public PrescriptionViewHolder(View view) {
             super(view);
+            prescription_name = view.findViewById(R.id.prescriptionName);
             prescription_amount = view.findViewById(R.id.prescriptionDosage);
             prescription_frequency = view.findViewById(R.id.prescriptionFrequency);
             prescription_when = view.findViewById(R.id.prescriptionDate);
