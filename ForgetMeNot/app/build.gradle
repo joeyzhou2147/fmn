@@ -29,4 +29,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     debugImplementation 'com.amitshekhar.android:debug-db:1.0.3'
     compile 'com.roomorama:caldroid:3.0.1'
+    compile 'com.android.support:cardview-v7:23.3.+'
+
 }

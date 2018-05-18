@@ -38,7 +38,7 @@ public class MedicalActivity extends AppCompatActivity implements View.OnClickLi
 
         sqdb = new MedicalInfoHelper(this);
         medicalID = "RogueOne";
-        model = sqdb.getRecord("RogueOne");
+        //model = sqdb.getRecord("RogueOne");
         openDoctorButton = (Button)this.findViewById(R.id.openDoctor);
         openPrescriptionButton = (Button)this.findViewById(R.id.openPrescription);
         openDoctorButton.setOnClickListener(this);
@@ -62,4 +62,6 @@ public class MedicalActivity extends AppCompatActivity implements View.OnClickLi
         }
 
     }
+
+
 }

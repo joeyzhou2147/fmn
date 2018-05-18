@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     public void meButton (View v)
     {
         Button button = (Button) v;
-        Intent intent = new Intent(this, MeActivity.class);
+        Intent intent = new Intent(this, PrescriptionActivity.class);
         v.findViewById(R.id.me);
         startActivity(intent);
     }
