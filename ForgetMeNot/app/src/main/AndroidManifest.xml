@@ -41,6 +41,11 @@
             android:name="gai.forgetmenot.Activities.PrescriptionActivity"
             android:label="Prescription"
             android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="gai.forgetmenot.Activities.Events"
+            android:label="Events"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
