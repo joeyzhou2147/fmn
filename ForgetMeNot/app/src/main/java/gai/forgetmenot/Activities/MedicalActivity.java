@@ -36,7 +36,7 @@ public class MedicalActivity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_medical);
         final TextView MedicalInfo = (TextView) findViewById(R.id.MedicalInfo);
 
-        sqdb = new MedicalInfoHelper(this);
+
         medicalID = "RogueOne";
         //model = sqdb.getRecord("RogueOne");
         openDoctorButton = (Button)this.findViewById(R.id.openDoctor);

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="57dp" />
+
+    <Button
+        android:id="@+id/action_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="36dp"
+        android:text="OK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSideEffects" />
+
+    <Button
+        android:id="@+id/action_cancel"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="44dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSideEffects" />
+
+    <EditText
+        android:id="@+id/editFrequency"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Frequency"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/editDosage"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <EditText
+        android:id="@+id/editStartDate"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Start Date"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/editFrequency"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <EditText
+        android:id="@+id/editDosage"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Dosage"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/editName"
+        tools:layout_editor_absoluteX="58dp" />
+
+    <EditText
+        android:id="@+id/editSideEffects"
+        android:layout_width="290dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Side Effects"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/editStartDate"
+        tools:layout_editor_absoluteX="57dp" />
+
+</android.support.constraint.ConstraintLayout>

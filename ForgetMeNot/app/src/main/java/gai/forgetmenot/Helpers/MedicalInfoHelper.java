@@ -94,10 +94,11 @@ public class MedicalInfoHelper extends SQLiteOpenHelper {
         Cursor cursor = db.query(TABLE_NAME,null,COLUMN_USER_ID+"=?",new String[] {userID},null,null,null
         );
 
-        if (cursor==null) {
+
+
+        if (!cursor.moveToFirst()) {
             return null;
         }
-        cursor.moveToFirst();
         return createMedicalObject(cursor);
     }
 

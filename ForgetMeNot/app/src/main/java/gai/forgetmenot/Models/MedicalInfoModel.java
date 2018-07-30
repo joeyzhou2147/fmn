@@ -14,8 +14,10 @@ public class MedicalInfoModel implements Parcelable {
     private int doctor_phonenumber, doctor_zip, street_apt_num;
     private String medical_id, doctor_name, doctor_address_street, doctor_address_city, doctor_state, user_id;
     private Address doctor_address;
+    public MedicalInfoModel(String user_id) {
+        this.user_id = user_id;
 
-
+    }
     public MedicalInfoModel(String medical_id,String user_id,String doctor_name,String doctor_address_street,
                             int street_apt_num,String doctor_address_city,String doctor_state,int doctor_zip,int doctor_phonenumber) {
 

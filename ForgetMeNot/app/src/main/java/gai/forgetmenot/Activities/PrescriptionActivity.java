@@ -11,11 +11,17 @@ import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -24,25 +30,61 @@ import gai.forgetmenot.Models.Prescription;
 import gai.forgetmenot.R;
 
 
-public class PrescriptionActivity extends AppCompatActivity {
+public class PrescriptionActivity extends AppCompatActivity implements AddPrescriptionFragment.OnInputListener{
 
 
     private PrescriptionHelper sqdb;
+    Toolbar toolbar;
+    private RecyclerViewAdapter adapter;
+    private  ArrayList<Prescription> prescriptions;
+    private String medicalId;
+    @Override
+    public void sendInput(String name,String dosage, String prescription_date,String prescription_consistency, String side_effects) {
+        Prescription newPrescription = new Prescription(name,medicalId,prescription_date,prescription_consistency,dosage, side_effects);
+        sqdb.addPrescription(newPrescription);
+        prescriptions.add(newPrescription);
+        adapter.notifyItemChanged(prescriptions.size()-1);
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prescription);
         sqdb = new PrescriptionHelper(this);
-        sqdb.onUpgrade(sqdb.getReadableDatabase(),1,2);
+        //sqdb.onUpgrade(sqdb.getReadableDatabase(),1,2);
 
-        intializeTestValues();
-        ArrayList<Prescription> prescriptions = sqdb.getAllRecords("ANewHope");
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        Log.d("TITLE", toolbar.getTitle().toString());
+        medicalId = getIntent().getExtras().getString("MedicalID");
+
+        //intializeTestValues();
+        prescriptions = sqdb.getAllRecords(medicalId);
         RecyclerView recyclerView = findViewById(R.id.prescriptionlist);
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, prescriptions);
+        adapter = new RecyclerViewAdapter(this, prescriptions);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.prescription_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int res_id = item.getItemId();
+        if(res_id==R.id.AddPrescription) {
+            AddPrescriptionFragment dialog = new AddPrescriptionFragment();
+            dialog.show(getFragmentManager(),"AddPrescriptionDialog");
+        }
+        return true;
+    }
+
+
 
     private void intializeTestValues() {
         sqdb.addPrescription(new Prescription("245345","RogueOne",
@@ -58,5 +100,7 @@ public class PrescriptionActivity extends AppCompatActivity {
                 "2008","Every 3 weeks",
                 "30 pounds","vomiting"));
     }
+
+
 }
 

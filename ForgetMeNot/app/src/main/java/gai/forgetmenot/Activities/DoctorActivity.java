@@ -29,6 +29,7 @@ public class DoctorActivity extends AppCompatActivity {
     private MedicalInfoModel model;
     private MedicalInfoHelper sqdb;
     private String medicalID;
+    private String userID = "test";
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,15 +39,20 @@ public class DoctorActivity extends AppCompatActivity {
         phone = findViewById(R.id.DoctorPhoneNumber);
 
         sqdb = new MedicalInfoHelper(this);
+        //ssqdb.onUpgrade(sqdb.getReadableDatabase(),1,2);
+
         medicalID = getIntent().getExtras().getString("MedicalID");
 
         model = sqdb.getRecord(medicalID);
-
-        name.setText(model.getDoctorName());
-        address.setText(model.getDoctorAddress());
-        phone.setText(String.valueOf(model.getDoctorPhone()));
+        if (model==null) {
+            model = new MedicalInfoModel("test");
+            sqdb.addMedicalRecord(model);
+        } else {
+            name.setText(model.getDoctorName());
+            address.setText(model.getDoctorAddress());
+            phone.setText(String.valueOf(model.getDoctorPhone()));
+        }
         submit = findViewById(R.id.Submit);
-
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

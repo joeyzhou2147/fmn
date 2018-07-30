@@ -7,24 +7,45 @@
     tools:context="gai.forgetmenot.Activities.MainActivity">
 
     <Button
-        android:id="@+id/me"
+        android:id="@+id/openEvent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="304dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="60dp"
+        android:text="Event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openMe" />
+
+    <Button
+        android:id="@+id/openMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="416dp"
         android:onClick="meButton"
         android:text="Me"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.807"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/trust"
+        android:id="@+id/openTrust"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="240dp"
+        android:layout_marginBottom="428dp"
+        android:layout_marginEnd="28dp"
         android:text="Trust"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintEnd_toStartOf="@+id/openMe"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/openMedical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical Activity"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="201dp" />
 </android.support.constraint.ConstraintLayout>
